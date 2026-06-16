@@ -120,7 +120,7 @@ administration fundamentals.
 ---
 
 ## 🏆 Platforms
-- **TryHackMe:** [https://tryhackme.com/p/Gokulkrishnan]
+- **TryHackMe:** https://tryhackme.com/p/Gokulkrishnan
 - **HackTheBox:** [Profile Link]
 - **HackerOne:** [Profile Link]
 - **Bugcrowd:** [Profile Link]
@@ -129,6 +129,6 @@ administration fundamentals.
 ---
 
 ## 📫 Contact
-- **LinkedIn:** [linkedin.com/in/gokulkrishnan-bca](YOUR_LINK)
+- **LinkedIn:** [linkedin.com/in/gokulkrishnan-bca](linkedin.com/in/gokulkrishnan-bca)
 - **Email:** goldeneagle0469@gmail.com
-- **GitHub:** [github.com/Gokulpvtr](YOUR_LINK)
+- **GitHub:** [github.com/Gokulpvtr](github.com/Gokulpvtr)
