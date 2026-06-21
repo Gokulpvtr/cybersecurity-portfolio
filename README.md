@@ -32,8 +32,9 @@ My goal is to begin my career in IT Infrastructure or Cybersecurity while contin
 | 4 | Cybersecurity                  | Tech Mahindra Foundation | ✅ Completed   |
 | 5 | n8n Automation Tool            | Analytics Vidhya         | ✅ Completed   |
 | 6 | OWASP Juice Shop               | TryHackMe                | ✅ Completed   |
-| 7 | Cisco Networking Basics        | Cisco Skills For All     | ⏳ In Progress |
-| 8 | CompTIA Security+              | Self Study               | 📋 Planned    |
+| 7 | Cisco Packet Tracer            | Cisco Skills for All     | ✅ Completed   |
+| 8 | Cisco Networking Basics        | Cisco Skills For All     | ⏳ In Progress |
+| 9 | CompTIA Security+              | Self Study               | 📋 Planned    |
 
 ---
 
@@ -226,7 +227,7 @@ Learn user administration, domain management, and Windows infrastructure concept
 
 **TryHackMe:** https://tryhackme.com/p/Gokulkrishnan
 
-**PortSwigger Web Security Academy:** In Progress
+**PortSwigger Web Security Academy:** https://portswigger.net/web-security
 
 **Cisco Skills For All:** In Progress
 
