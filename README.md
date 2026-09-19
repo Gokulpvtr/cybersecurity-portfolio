@@ -14,176 +14,37 @@ My goal is to begin my career in IT Infrastructure or Cybersecurity while contin
 
 ## 🎯 Career Path
 
-**Short-Term:** IT Administrator / Technical Support Engineer / System Administrator
+**Short-Term:** Entry-level IT / junior security / System Administrator
 
-**Mid-Term:** SOC Analyst / Security Analyst
+**Mid-Term:** Junior Penetration Tester / Web Application Security Tester
 
 **Long-Term:** Penetration Tester / Red Team Operator
 
 ---
 
-## 📜 Certifications
+## Portfolio map
 
-| # | Certification                  | Issuer                   | Status        |
-| - | ------------------------------ | ------------------------ | ------------- |
-| 1 | Ethical Hacking & Web Security | Offenso Hackers Academy  | ✅ Completed   |
-| 2 | SQL Injection Attacks          | CodeRed                  | ✅ Completed   |
-| 3 | Kali Linux for Ethical Hackers | Udemy                    | ✅ Completed   |
-| 4 | Cybersecurity                  | Tech Mahindra Foundation | ✅ Completed   |
-| 5 | n8n Automation Tool            | Analytics Vidhya         | ✅ Completed   |
-| 6 | OWASP Juice Shop               | TryHackMe                | ✅ Completed   |
-| 7 | Cisco Packet Tracer            | Cisco Skills for All     | ✅ Completed   |
-| 8 | Cisco Networking Basics        | Cisco Skills For All     | ⏳ In Progress |
-| 9 | CompTIA Security+              | Self Study               | 📋 Planned    |
-
----
-
-# 🔬 Projects
-
-## 🛡️ Cybersecurity Projects
-
-### 1. Python TCP Port Scanner
-
-**Tools:** Python, Socket Programming
-
-**Description:**
-Developed a custom TCP Port Scanner capable of identifying open ports and performing basic service detection.
-
-**Skills Demonstrated:**
-
-* Python Programming
-* TCP Networking
-* Port Scanning Concepts
-* Network Troubleshooting
-
-**Repository:**
-https://github.com/Gokulpvtr/python-port-scanner
+| Area | Repo |
+|---|---|
+| Web lab write-ups | [portswigger-writeups](https://github.com/Gokulpvtr/portswigger-writeups) |
+| CTF / room write-ups | [tryhackme-writeups](https://github.com/Gokulpvtr/tryhackme-writeups) |
+| Vulnerability notes | [web-vuln-notes](https://github.com/Gokulpvtr/web-vuln-notes) |
+| Hands-on app testing | [vulnerable-app-labs](https://github.com/Gokulpvtr/vulnerable-app-labs) |
+| Pentest reports | [pentest-report-samples](https://github.com/Gokulpvtr/pentest-report-samples) |
+| Tools / scripts | [python-port-scanner](https://github.com/Gokulpvtr/python-port-scanner), [security-tools](https://github.com/Gokulpvtr/security-tools) |
+| Recon & bug bounty | [bug-bounty-methodology](https://github.com/Gokulpvtr/bug-bounty-methodology) |
+| Scanning | [nmap-labs](https://github.com/Gokulpvtr/nmap-labs) |
+| Networking & Linux | [networking-notes](https://github.com/Gokulpvtr/networking-notes), [linux-note](https://github.com/Gokulpvtr/linux-note), [packet-tracer-labs](https://github.com/Gokulpvtr/packet-tracer-labs), [wireshark-analysis](https://github.com/Gokulpvtr/wireshark-analysis) |
 
 ---
 
-### 2. PortSwigger Web Security Academy Labs
-
-**Tools:** Burp Suite, Kali Linux
-
-**Description:**
-Completed and documented multiple PortSwigger Web Security Academy labs covering SQL Injection, Access Control vulnerabilities, and OWASP Top 10 topics.
-
-**Skills Demonstrated:**
-
-* Web Application Security
-* Burp Suite
-* HTTP Request Analysis
-* Vulnerability Assessment
-
-**Repository:**
-https://github.com/Gokulpvtr/portswigger-writeups
+## Certifications
+See [certs/README.md](certs/README.md).
 
 ---
 
-### 3. Security Methodology Notes
-
-**Tools:** Subfinder, Amass, Nmap, Burp Suite
-
-**Description:**
-Documentation repository containing security testing methodologies, reconnaissance workflows, and security learning notes.
-
-**Skills Demonstrated:**
-
-* Reconnaissance
-* Security Documentation
-* Workflow Development
-
-**Repository:**
-https://github.com/Gokulpvtr/bug-bounty-methodology
-
----
-
-## 🌐 Networking & System Administration Projects
-
-### 4. Enterprise Network Design Lab
-
-**Tools:** Cisco Packet Tracer
-
-**Description:**
-Designing enterprise-style network environments with VLANs, DHCP, NAT, ACLs, routing, and switching concepts.
-
-**Skills Demonstrated:**
-
-* Network Design
-* Routing & Switching
-* VLAN Configuration
-* Network Troubleshooting
-
-**Repository:**
-https://github.com/Gokulpvtr/packet-tracer-labs
-
----
-
-### 5. Network Traffic Analysis
-
-**Tools:** Wireshark, Kali Linux
-
-**Description:**
-Captured and analyzed network traffic to study DNS activity, HTTP/HTTPS communications, TCP handshakes, and protocol behavior.
-
-**Skills Demonstrated:**
-
-* Packet Analysis
-* Protocol Identification
-* Network Monitoring
-* Traffic Investigation
-
-**Repository:**
-https://github.com/Gokulpvtr/wireshark-analysis
-
----
-
-### 6. Linux Administration Notes
-
-**Tools:** Kali Linux, Ubuntu Linux
-
-**Description:**
-Collection of Linux administration notes, command references, and practical exercises used during cybersecurity and system administration learning.
-
-**Skills Demonstrated:**
-
-* Linux Fundamentals
-* File Permissions
-* Process Management
-* Network Configuration
-
-**Repository:**
-https://github.com/Gokulpvtr/linux-note
-
----
-
-## 📋 Planned Projects
-
-### SOC Home Lab
-
-**Planned Technologies:**
-
-* Splunk
-* Ubuntu Server
-* Kali Linux
-* Log Analysis
-
-**Objective:**
-Build a small SOC environment for learning security monitoring and log analysis.
-
----
-
-### Active Directory Home Lab
-
-**Planned Technologies:**
-
-* Windows Server
-* Active Directory
-* Group Policy
-* Windows Client
-
-**Objective:**
-Learn user administration, domain management, and Windows infrastructure concepts.
+## Roadmap
+See [roadmap.md](roadmap.md).
 
 ---
 
@@ -229,7 +90,7 @@ Learn user administration, domain management, and Windows infrastructure concept
 
 **PortSwigger Web Security Academy:** https://portswigger.net/web-security
 
-**Cisco Skills For All:** In Progress
+**Cisco Skills For All:** Learning Platform
 
 **HackerOne:** Learning Platform
 
@@ -243,7 +104,7 @@ Learn user administration, domain management, and Windows infrastructure concept
 
 **GitHub:** https://github.com/Gokulpvtr
 
-**Email:** [goldeneagle0469@gmail.com](mailto:goldeneagle0469@gmail.com)
+**Email:** [gokulkrishnanorg@gmail.com](mailto:gokulkrishnanorg@gmail.com)
 
 ---
 
