@@ -1,123 +1,112 @@
-# 🛡️ Cybersecurity & IT Infrastructure Portfolio — Gokulkrishnan S
+# Gokulkrishnan S: 3D Cybersecurity Portfolio
 
-## 👨‍💻 About Me
+React + Three.js portfolio with a flowing "anti-gravity" look:
 
-I'm a Final-Year BCA student at the University of Kerala with a strong interest in Networking, System Administration, and Cybersecurity.
+- **3D hero:** a network sphere scanned by a moving plane (nodes flash red when hit), 14,000 GPU particles that flow upward and scatter away from your cursor, and floating wireframe shapes that dodge the mouse.
+- **Cursor:** a comet trail that flows behind the mouse, a ring that locks onto buttons like a targeting reticle, and click shockwaves with sparks that float upward.
+- **Glass everywhere:** frosted 3D cards that tilt toward the cursor with icons that pop out of the glass, a floating glass nav, and a social dock.
+- **Scroll effects:** inertial smooth scrolling, word-by-word heading reveals, cards that float in with a 3D tilt, sliding text bands that speed up and skew with your scroll speed, a timeline that draws itself, and a scroll-driven camera.
+- **Adaptive performance:** if a device runs slowly, the site switches itself to a lighter mode (fewer particles, no glass blur). Add `?lite` to the URL to force it.
 
-My technology journey started with web development, but as I explored networking, Linux, and web application security, I developed a passion for cybersecurity and IT infrastructure.
+Stack: React 18, Vite, @react-three/fiber (Three.js), Framer Motion, Lenis.
 
-I am currently building practical skills through networking labs, Linux administration, Wireshark traffic analysis, TryHackMe, PortSwigger Web Security Academy, and hands-on projects documented on GitHub.
+## Run it
 
-My goal is to begin my career in IT Infrastructure or Cybersecurity while continuously developing my technical and security skills.
+You need Node.js 18 or newer (https://nodejs.org, choose LTS).
 
----
+```bash
+npm install
+npm run dev
+```
 
-## 🎯 Career Path
+Open the address it prints (usually http://localhost:5173).
 
-**Short-Term:** Entry-level IT / junior security / System Administrator
+```bash
+npm run build      # creates the dist/ folder
+npm run preview    # test the built site locally
+```
 
-**Mid-Term:** Junior Penetration Tester / Web Application Security Tester
+## Edit your content
 
-**Long-Term:** Penetration Tester / Red Team Operator
+Everything is in one file: **`src/data.js`**
 
----
-
-## Portfolio map
-
-| Area | Repo |
+| To change | Edit |
 |---|---|
-| Web lab write-ups | [portswigger-writeups](https://github.com/Gokulpvtr/portswigger-writeups) |
-| CTF / room write-ups | [tryhackme-writeups](https://github.com/Gokulpvtr/tryhackme-writeups) |
-| Vulnerability notes | [web-vuln-notes](https://github.com/Gokulpvtr/web-vuln-notes) |
-| Hands-on app testing | [vulnerable-app-labs](https://github.com/Gokulpvtr/vulnerable-app-labs) |
-| Pentest reports | [pentest-report-samples](https://github.com/Gokulpvtr/pentest-report-samples) |
-| Tools / scripts | [python-port-scanner](https://github.com/Gokulpvtr/python-port-scanner), [security-tools](https://github.com/Gokulpvtr/security-tools) |
-| Recon & bug bounty | [bug-bounty-methodology](https://github.com/Gokulpvtr/bug-bounty-methodology) |
-| Scanning | [nmap-labs](https://github.com/Gokulpvtr/nmap-labs) |
-| Networking & Linux | [networking-notes](https://github.com/Gokulpvtr/networking-notes), [linux-note](https://github.com/Gokulpvtr/linux-note), [packet-tracer-labs](https://github.com/Gokulpvtr/packet-tracer-labs), [wireshark-analysis](https://github.com/Gokulpvtr/wireshark-analysis) |
+| Name, typing roles, intro | `profile` |
+| Email, LinkedIn, TryHackMe, GitHub | `profile` (also the `socials` list, which reads from it) |
+| Floating tags in the hero | `floatTags` |
+| Sliding text bands | `marquee` |
+| About text and quick facts | `about` |
+| Skills | `skills` |
+| Stat numbers under the hero | `stats` |
+| Repo cards | `projects` |
+| Certificates | `certifications` |
+| Experience and education | `timeline` |
 
----
+Search the file for `EDIT` to find values that need a check.
 
-## Certifications
-See [certs/README.md](certs/README.md).
+## Photo, certificates, resume
 
----
+- **Photo:** `public/profile.jpg` (already added). Replace the file to change it.
+- **Certificates:** put the image in `public/certs/`, then set `image: 'certs/your-file.png'` on that certificate in `src/data.js`. Click a card on the site to flip it and view the image. Optional `url` adds a "Verify credential" link.
+- **Resume:** put `resume.pdf` in `public/`, then set `resume: 'resume.pdf'` in `src/data.js`.
 
-## Roadmap
-See [roadmap.md](roadmap.md).
+## Project status on the cards
 
----
+- `active` (green): links to `github.com/Gokulpvtr/<repo>`
+- `progress` (cyan): same, marked "In progress"
+- `planned` (amber): shows "Repository coming soon", no link
 
-## 🛠️ Technical Skills
+Create the repo on GitHub, then change its status to `active`.
 
-| Category              | Skills                                                       |
-| --------------------- | ------------------------------------------------------------ |
-| Networking            | TCP/IP, DNS, DHCP, NAT, VLANs, Basic Routing & Switching     |
-| Cybersecurity         | Burp Suite, Nmap, Wireshark, OWASP Top 10, PortSwigger Labs  |
-| Operating Systems     | Kali Linux, Ubuntu Linux, Windows 10/11                      |
-| Programming           | Python, Bash                                                 |
-| System Administration | Linux Administration, User Management, Network Configuration |
-| Learning              | Active Directory, Windows Server, SOC Operations             |
-| Frameworks            | OWASP Top 10, MITRE ATT&CK                                   |
+## Change the look
 
----
+- Colors and fonts: the `:root` block at the top of `src/styles.css`
+- 3D scene: `src/components/Scene3D.jsx`
+  - particle counts: `count` in `Contents`
+  - cursor push strength: `uPush` in `Flow`
+  - scan speed: the `0.7` in `Math.sin(t * 0.7 * motion)`
+- Cursor: `src/components/CursorFX.jsx` (`TRAIL_LIFE` sets how long the comet trail lasts)
+- Scroll smoothness: `lerp: 0.085` in `src/App.jsx` (lower is smoother and slower)
 
-## 📚 Learning Repositories
+Accessibility: keyboard focus outlines, a "reduce motion" setting turns down animation and disables smooth scroll, and the custom cursor only runs on devices with a real mouse.
 
-* Networking Notes
-  https://github.com/Gokulpvtr/networking-notes
+## Publish it (free)
 
-* Linux Notes
-  https://github.com/Gokulpvtr/linux-note
+**GitHub Pages** (workflow included in `.github/workflows/deploy.yml`)
+1. Create a repo (for example `portfolio`) and push this folder to the `main` branch.
+2. Repo **Settings → Pages → Source: GitHub Actions**.
+3. Your site appears at `https://gokulpvtr.github.io/portfolio/`.
 
-* Wireshark Analysis
-  https://github.com/Gokulpvtr/wireshark-analysis
+**Vercel or Netlify:** import the repo. Build command `npm run build`, output folder `dist`.
 
-* PortSwigger Writeups
-  https://github.com/Gokulpvtr/portswigger-writeups
+## Try it without installing
 
-* TryHackMe Writeups
-  https://github.com/Gokulpvtr/tryhackme-writeups
+Push the project to GitHub, then open `https://stackblitz.com/github/Gokulpvtr/<your-repo>`.
 
-* Packet Tracer Labs
-  https://github.com/Gokulpvtr/packet-tracer-labs
+## Troubleshooting
 
----
+- **Blank 3D area or a WebGL error:** update the browser and turn on hardware acceleration. The rest of the page still works.
+- **Feels heavy on a laptop:** it should switch to lite mode on its own. To force it, open the site with `?lite` at the end of the address, or lower `count` in `Scene3D.jsx`.
+- **`npm install` fails:** check that `node -v` shows 18 or higher.
+- **Fonts look different offline:** they load from Google Fonts, so they need internet the first time.
 
-## 🏆 Platforms
+## Folder guide
 
-**TryHackMe:** https://tryhackme.com/p/Gokulkrishnan
-
-**PortSwigger Web Security Academy:** https://portswigger.net/web-security
-
-**Cisco Skills For All:** Learning Platform
-
-**HackerOne:** Learning Platform
-
-**Bugcrowd:** Learning Platform
-
----
-
-## 📫 Contact
-
-**LinkedIn:** https://www.linkedin.com/in/gokulkrishnan-bca/
-
-**GitHub:** https://github.com/Gokulpvtr
-
-**Email:** [gokulkrishnanorg@gmail.com](mailto:gokulkrishnanorg@gmail.com)
-
----
-
-## 🚀 Current Focus
-
-* Cisco Networking Basics
-* Linux Administration
-* Wireshark Traffic Analysis
-* PortSwigger Web Security Academy
-* Active Directory Fundamentals
-* IT Infrastructure Skills
-* Cybersecurity Fundamentals
-
----
-
-> "Continuous learning, practical experience, and strong fundamentals are the foundation of a successful IT and Cybersecurity career."
+```
+src/
+  data.js            <- all your content
+  styles.css         <- colors, glass, layout, animations
+  App.jsx            <- page order, smooth scroll, performance switch
+  components/
+    Scene3D.jsx      <- particles, sphere, floating shapes
+    CursorFX.jsx     <- cursor, trail, click effects
+    TiltCard.jsx     <- 3D glass card
+    Marquee.jsx      <- sliding text bands
+    Nav.jsx  SocialDock.jsx  Socials.jsx  Loader.jsx
+    Hero.jsx  About.jsx  Skills.jsx  Projects.jsx
+    Certifications.jsx  Experience.jsx  Contact.jsx  Footer.jsx
+public/
+  profile.jpg        <- your photo
+  certs/             <- certificate images (add these)
+```
